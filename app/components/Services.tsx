@@ -1,25 +1,32 @@
-const stats = [
-    { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
-    { id: 2, name: 'Assets under holding', value: '$119 trillion' },
-    { id: 3, name: 'New users annually', value: '46,000' },
-  ]
-  
-  export default function Example() {
-    return (
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 p-16">
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3 rounded">
-            {stats.map((stat) => (
-              <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4 bg-gray-100">
-                <dt className="text-base/7 text-gray-600 p-32">{stat.name}</dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                  {stat.value}
-                </dd>
-              </div>
-            ))}
-          </dl>
+import { FaScrewdriverWrench } from "react-icons/fa6";
+import { FaGear } from "react-icons/fa6";
+import { PiHairDryerDuotone } from "react-icons/pi";
+
+export default function Services() {
+  return (
+    <div>
+        <h1 className="bg-white w-full text-5xl font-bold text-black text-center p-10">SERVICE</h1>
+      <div className="w-full inline-flex text-black mx-auto bg-white items-center justify-center p-20">
+        <div className="mx-auto bg-gray-100 border p-10 rounded-md">
+          <FaScrewdriverWrench size={50} fill="gray" />
+          <h1>Screw</h1>
+          <p>hallo</p>
+        </div>
+        <div className="mx-auto bg-gray-100 border p-10 rounded-md shadow-sm">
+          <FaGear size={50} fill="gray" />
+          <h1>Gear</h1>
+          <p>hallo</p>
+        </div>
+        <div className="mx-auto bg-gray-100 border p-10">
+          <PiHairDryerDuotone size={50} fill="gray" />
+          <h1>Dryer</h1>
+          <p>hallo</p>
+        </div>
+        <div className="mx-auto bg-gray-100 border p-10">
+          <h1>Screw</h1>
+          <p>hallo</p>
         </div>
       </div>
-    )
-  }
-  
+    </div>
+  );
+}
