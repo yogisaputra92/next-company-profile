@@ -4,7 +4,7 @@ import BlurText from "@/components/TextAnimations/BlurText/BlurText";
 
 export default function Header() {
   return (
-    <div className=" lg:h-screen grid grid-col-1 lg:grid-rows-none lg:grid-cols-12 bg-gray-200 text-black">
+    <div className="h-screen grid grid-col-1 lg:grid-rows-none lg:grid-cols-12 bg-gray-200 text-black relative">
       <div className="lg:col-span-6 flex flex-col justify-center items-start gap-4 p-5 md:p-10">
         <div className="">
           <AnimatedContent

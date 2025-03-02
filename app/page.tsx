@@ -5,14 +5,18 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Services from "./components/Services";
 import SplashCursor from "@/components/Animations/SplashCursor/SplashCursor";
+import Product from "./components/Product";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="select-none">
       <Navbar/>
       <Header/>
       <Services/>
-      <SplashCursor/>
+      <Product/>
+      <Footer/>
+      {/* <SplashCursor/> */}
     </div>
   );
 }

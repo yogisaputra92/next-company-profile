@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
-    <div className="">
-      <div className="navbar flex bg-[#2596be]">
+    <div className="relative">
+      <div className="navbar flex bg-[#2596be] fixed z-10">
         <div className="w-full flex items-center px-3">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,12 +41,12 @@ export default function Navbar() {
                   </datalist>
                 </li>
                 <li>
-                  <a>About</a>
+                  <a>Services</a>
                 </li>
             </ul>
           </div>
           <h1 className="w-full lg:ml-6 text-2xl font-bold text-center lg:text-start md:text-start">
-            Boge
+            Boge.com
           </h1>
           {/* <a className="btn btn-ghost text-xl">Boge</a> */}
         </div>
@@ -69,7 +69,7 @@ export default function Navbar() {
               </details>
             </li>
             <li>
-              <a>About</a>
+              <a>Services</a>
             </li>
           </ul>
         </div>
